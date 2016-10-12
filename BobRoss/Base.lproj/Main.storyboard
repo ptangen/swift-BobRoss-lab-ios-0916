@@ -1,8 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,7 +20,59 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Grass" translatesAutoresizingMaskIntoConstraints="NO" id="0Ak-HY-Odl">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="0Ak-HY-Odl" secondAttribute="height" multiplier="8:5" id="tlf-5O-usY"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sun" translatesAutoresizingMaskIntoConstraints="NO" id="jeg-pU-t5i">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="jeg-pU-t5i" secondAttribute="height" multiplier="1:1" id="UDK-bs-Ppq"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SmallTree" translatesAutoresizingMaskIntoConstraints="NO" id="a0G-uc-ql4">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="a0G-uc-ql4" secondAttribute="height" multiplier="139:230" id="uD3-8z-tky"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tree" translatesAutoresizingMaskIntoConstraints="NO" id="1pk-E6-2sD">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="1pk-E6-2sD" secondAttribute="height" multiplier="1100:823" id="J5o-0O-xr9"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Clouds" translatesAutoresizingMaskIntoConstraints="NO" id="kkJ-I5-Hjs">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="kkJ-I5-Hjs" secondAttribute="height" multiplier="5:3" id="Iou-cM-nRC"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KidsPlaying" translatesAutoresizingMaskIntoConstraints="NO" id="gZ5-kV-gdN">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gZ5-kV-gdN" secondAttribute="height" multiplier="1:1" id="TRS-k1-U8j"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="0.60332628909999997" green="0.65530478960000005" blue="0.81491315360000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="gZ5-kV-gdN" firstAttribute="bottom" secondItem="0Ak-HY-Odl" secondAttribute="top" multiplier="1.3" id="0pe-la-J5D"/>
+                            <constraint firstItem="kkJ-I5-Hjs" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="17b-ZQ-ByH"/>
+                            <constraint firstItem="gZ5-kV-gdN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1fJ-0u-tXF"/>
+                            <constraint firstItem="jeg-pU-t5i" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.25" id="75O-bH-mLY"/>
+                            <constraint firstAttribute="trailing" secondItem="jeg-pU-t5i" secondAttribute="trailing" id="7Z1-CP-bb5"/>
+                            <constraint firstItem="a0G-uc-ql4" firstAttribute="bottom" secondItem="0Ak-HY-Odl" secondAttribute="top" multiplier="1.25" id="CJY-9s-hu6"/>
+                            <constraint firstItem="0Ak-HY-Odl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="JQu-FL-RaU"/>
+                            <constraint firstItem="kkJ-I5-Hjs" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.75" id="Owa-BQ-nXq"/>
+                            <constraint firstItem="0Ak-HY-Odl" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="QBp-lv-hvX"/>
+                            <constraint firstItem="1pk-E6-2sD" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.7" id="UHp-SD-qNS"/>
+                            <constraint firstAttribute="trailing" secondItem="1pk-E6-2sD" secondAttribute="trailing" id="iVt-IC-fhO"/>
+                            <constraint firstItem="jeg-pU-t5i" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="kW0-Q5-8Gy"/>
+                            <constraint firstItem="a0G-uc-ql4" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.3" id="lMl-2Q-GwS"/>
+                            <constraint firstItem="a0G-uc-ql4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="mfj-Tw-gGu"/>
+                            <constraint firstItem="kkJ-I5-Hjs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="sOm-du-lqL"/>
+                            <constraint firstAttribute="trailing" secondItem="0Ak-HY-Odl" secondAttribute="trailing" id="tHn-kn-seU"/>
+                            <constraint firstItem="gZ5-kV-gdN" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="tes-YF-cac"/>
+                            <constraint firstItem="1pk-E6-2sD" firstAttribute="bottom" secondItem="0Ak-HY-Odl" secondAttribute="top" multiplier="1.3" constant="1" id="u33-bs-5Xe"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -25,4 +80,12 @@
             <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Clouds" width="3109" height="1696"/>
+        <image name="Grass" width="1280" height="800"/>
+        <image name="KidsPlaying" width="2285" height="1826"/>
+        <image name="SmallTree" width="1390" height="2300"/>
+        <image name="Sun" width="432" height="432"/>
+        <image name="Tree" width="1100" height="823"/>
+    </resources>
 </document>
